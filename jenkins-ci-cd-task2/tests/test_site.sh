@@ -6,7 +6,7 @@ test -f Dockerfile
 test -f Jenkinsfile
 
 grep -q 'CI/CD Pipeline' index.html
-grep -q 'Version 1' index.html
+grep -q 'Version 2' index.html
 grep -q 'FROM nginx:alpine' Dockerfile
 
-echo 'PASS: Site files and required content are present.'
+echo 'PASS: Version 2 website tests successful.'
